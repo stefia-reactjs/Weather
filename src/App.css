@@ -7,7 +7,7 @@
 }
 .weatherHeader {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: end;
   gap: 51rem;
 }
@@ -17,7 +17,7 @@
   margin-top: 2.25rem;
   width: 100%;
   gap: 2.75rem;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .weatherDetail {
@@ -26,7 +26,7 @@
   margin-top: 3rem;
   width: 100%;
   gap: 2.75rem;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 @media (max-width: 1280px) and (min-width: 825px) {

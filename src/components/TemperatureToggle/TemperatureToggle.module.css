@@ -1,0 +1,32 @@
+.toggle {
+  display: flex;
+  gap: 0.1rem;
+  background: #20293a;
+  border-radius: 1.5rem;
+  padding: 0.25rem;
+  height: 100%;
+}
+
+.button {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.25rem;
+}
+
+.button:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.button.active {
+  background: #ffffff;
+  color: #20293a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}

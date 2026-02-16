@@ -1,0 +1,65 @@
+.wrapper {
+  width: 21.25rem;
+  height: 7.375rem;
+  background-color: #20293a;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  align-items: flex-start;
+}
+
+.right {
+  align-items: center;
+}
+
+.country {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: #83878f;
+}
+
+.city {
+  font-size: 1.5rem;
+  margin-bottom: 0.875rem;
+}
+
+.condition {
+  font-size: 0.75rem;
+}
+
+.temperature {
+  font-size: 1.5rem;
+}
+
+.icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.iconImg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+@media (max-width: 1280px) and (min-width: 825px) {
+  .wrapper {
+    width: 100%;
+    min-width: 185px;
+  }
+}
+
+@media (max-width: 824px) and (min-width: 400px) {
+  .wrapper {
+    width: 100%;
+  }
+}

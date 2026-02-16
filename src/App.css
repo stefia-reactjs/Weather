@@ -1,0 +1,63 @@
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+.weatherHeader {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 51rem;
+}
+
+.weatherToday {
+  display: flex;
+  margin-top: 2.25rem;
+  width: 100%;
+  gap: 2.75rem;
+  justify-content: center;
+}
+
+.weatherDetail {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 3rem;
+  width: 100%;
+  gap: 2.75rem;
+  justify-content: center;
+}
+
+@media (max-width: 1280px) and (min-width: 825px) {
+  #root {
+    padding: 0 4rem;
+  }
+  .weatherHeader {
+    justify-content: space-between;
+    gap: 0;
+  }
+  .weatherToday {
+    align-items: center;
+  }
+}
+
+@media (max-width: 824px) and (min-width: 400px) {
+  #root {
+    padding: 0 4rem;
+  }
+
+  .weatherHeader {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .weatherToday {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weatherDetail {
+    flex-wrap: wrap;
+  }
+}

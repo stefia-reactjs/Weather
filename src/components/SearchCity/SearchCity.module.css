@@ -1,0 +1,28 @@
+input {
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+  border: none;
+  width: 12.5rem;
+  font-size: 0.875rem;
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: #83878f;
+}
+
+.icon {
+  padding-left: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.wrapper {
+  background-color: #20293a;
+  width: 15rem;
+  height: 2.75rem;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  margin-top: 1.75rem;
+}

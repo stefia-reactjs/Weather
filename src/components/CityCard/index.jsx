@@ -3,7 +3,7 @@ import styles from './../CityCard/CityCard.module.css'
 const CityCard = ({ city, temp, condition, country, icon, unit }) => {
   if (temp === null || condition === null) return <div>Loading {city}...</div>
 
-  const iconUrl = `/${icon}.png`
+  const iconUrl = `${import.meta.env.BASE_URL}${icon}.png`
 
   const convertTemp = (tempCelsius) => {
     if (unit === 'F') {

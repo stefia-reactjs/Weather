@@ -21,7 +21,7 @@ function WeeklyForecastCard({
   scaleMax,
   unit,
 }) {
-  const iconUrl = `/${icon}.png`
+  const iconUrl = `${import.meta.env.BASE_URL}${icon}.png`
   const thermometerStyles = getThermometerStyles(minTemp, maxTemp, scaleMin, scaleMax)
 
   const convertTemp = (tempCelsius) => {

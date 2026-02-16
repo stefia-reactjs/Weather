@@ -1,7 +1,7 @@
 import styles from './HourlyForecastCard.module.css'
 
 export default function HourlyForecastCard({ temp, condition, dt_txt, icon, unit }) {
-  const iconUrl = `/${icon}.png`
+  const iconUrl = `${import.meta.env.BASE_URL}${icon}.png`
 
   const dateObj = dt_txt ? new Date(dt_txt) : null
   const formattedTime = dateObj

@@ -18,7 +18,7 @@ function CurrentWeatherCard() {
   const current = forecast?.list?.find((h) => h?.main && h?.weather && h.weather[0]) || null
   if (!current) return <div>Нет данных</div>
 
-  const iconUrl = `/${current.weather[0].icon}.png`
+  const iconUrl = `${import.meta.env.BASE_URL}${current.weather[0].icon}.png`
 
   const dateObj = new Date(current.dt_txt)
   const formattedTime = dateObj.toLocaleTimeString([], {
